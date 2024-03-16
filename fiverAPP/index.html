@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="script.js"
+    ></script>
+  </head>
+  <body>
+    <div id="event" aria-disabled="true">
+      <h1>Welches Event steht an?</h1>
+      <div id="erstellen">
+        <h2>Erstelle ein neues Event</h2>
+        <input id="event-input" placeholder="Event Name" />
+        <br />
+        <button id="erstellenb" onclick="addEvent()">Erstellen</button>
+      </div>
+      <div id="wählen">
+        <h2>Wähle ein Event</h2>
+        <div id="wahl"></div>
+      </div>
+    </div>
+
+    <div id="produktersteller" style="display: none">
+      <div id="überschrift"></div>
+      <h1>Erstelle neue Produkte</h1>
+      <br />
+      <br />
+      <input id="produktNameInput" placeholder="Produkt Name" />
+      <input id="preisInput" placeholder="Preis" /> <br />
+      <input id="farbeInput" placeholder="Farbe" /> <br />
+      <br />
+      <button id="produkt_hinzufügen">Produkt Hinzufügen</button>
+      <br />
+      <button class="switchL" onclick="changeto1M()">&larr;</button>
+      <button class="switchR" onclick="changeto3()">&rarr;</button>
+      <br />
+      <div id="produktediv"></div>
+    </div>
+
+    <div id="deineprodukte" style="display: none">
+      <div id="abstand">
+        <div id="überschrift2"></div>
+        <h1>Deine Produkte</h1>
+        <div id="alleprodukte"></div>
+        <br />
+        <div id="verschieben">
+          <div id="anzahl" style="display: block;"></div>
+          <h2 id="derGesamtpreisbeträgt">Der Gesamtpreis beträgt:</h2>fl
+          <div id="gesamtpreis"></div>
+          <button id="gesamtpreis-loeschen"></button>
+        </div>
+      </div>
+      <!-- Schließendes Tag für das "abstand"-Div hier platziert -->
+      <div id="gekaufte-produkte">
+        <br />
+        <h2 id="gekaufte-produkteü" style="display: none;">gekaufte-produkte</h2>
+        
+        <div>
+          <button id="gesamteinahmenbutton">Gesamteinnahmen</button>
+        </div>
+      </div>
+      <button class="switchL" onclick="changeto2M()">&larr;</button>
+      <button class="switchR" onclick="changeto4()">&rarr;</button>
+    </div>
+
+    <div id="gesamt-einnahmen" style="display: none" aria-disabled="true">
+      <div id="überschrift3"></div>
+      <h1>Deine Gesamt-einnahmen</h1>
+      <div id="zusammen">
+        <h2>Deine Einnahmen:</h2>
+        <div id="jawoll"></div>
+      </div>
+      <button id="gzurück" onclick="deledeG()">
+        Gesamteinnahmen zurücksetzen
+      </button>
+      <br />
+      <details id="">
+        <summary>Details</summary>
+        <br />
+
+        <div id="documentation"></div>
+      </details>
+      <button id="zurück">zurück</button>
+      <button class="switchL" onclick="changeto3M()">&larr;</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script></script>
+  </body>
+</html>
